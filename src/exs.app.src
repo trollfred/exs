@@ -1,0 +1,8 @@
+{application, exs,
+ [
+  {description, "xenstored wire protocol library"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, []},
+  {env, []}
+ ]}.
