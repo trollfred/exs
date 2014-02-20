@@ -5,7 +5,7 @@
 -include("exs.hrl").
 
 
--export([start/0,start/1]).
+-export([start_link/0,start_link/1]).
 -export([stop/1]).
 -export([directory/2]).
 -export([read/2]).
@@ -24,10 +24,10 @@
 
 
 
-start() ->
+start_link() ->
     start(?XS_DEFAULT_PATH).
 
-start(Path) ->
+start_link(Path) ->
     gen_server:start_link(?MODULE, Path, []).
 
 stop(Pid) ->
