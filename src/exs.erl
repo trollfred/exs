@@ -25,7 +25,7 @@
 
 
 start_link() ->
-    start(?XS_DEFAULT_PATH).
+    start_link(?XS_DEFAULT_PATH).
 
 start_link(Path) ->
     gen_server:start_link(?MODULE, Path, []).
