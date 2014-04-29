@@ -1,7 +1,7 @@
 {application, exs,
  [
-  {description, "xenstored wire protocol library"},
-  {vsn, "0.0.1"},
+  {description, "Xenstored wire protocol library"},
+  {vsn, "0.1.0"},
   {registered, []},
   {applications, []},
   {env, []}
